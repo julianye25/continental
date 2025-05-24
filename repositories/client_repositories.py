@@ -40,3 +40,7 @@ class ClienteRepository(ABC):
     @abstractmethod
     async def exists_by_email(self, email: str) -> bool:
         pass
+
+    @abstractmethod
+    async def exists_by_documento(self, documento: str) -> bool:
+        pass
